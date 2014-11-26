@@ -16,16 +16,25 @@ public class MainActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_main);
 	}
 
+	//Mettodo que faz uma chamad para tela 
+	//Sendo chamada ou a tela 1 ou a tela 2
 	public void dispararAcaoTela(View view) {
 		Intent intent = new Intent("ACAO_TELA");
 		startActivity(intent);
 	}
+	
+	//Metodo que chama uma tela incluindo uma categoria
+	//Será retornado apenas a tela 2
+	//que possui um filtro chamado CATEGORIA_TELA
 	public void dispararAcaoTelaCategoria(View view) {
 		Intent intent = new Intent("ACAO_TELA");
 		intent.addCategory("CATEGORIA_TELA");
 		startActivity(intent);
 	}
 	
+	
+	//metodo abre o navegador 
+	//a Intent chama o navegador com o parametro ACTION_VIEW e uma url
 	public void abrirNavegador(View view) {
 		Uri uri = Uri.parse("http://www.tairoroberto.kinghost.net");
 		Intent intent = new Intent(Intent.ACTION_VIEW,uri);
