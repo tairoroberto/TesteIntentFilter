@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.testeintentfilter.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Teste com IntentFilter" />
+
+    <Button
+        android:id="@+id/btnDispararAcaoTelaCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:text="Disparar ação TELA e CATEGORIA, TELA"
+        android:onClick="dispararAcaoTelaCategoria" />
+
+    <Button
+        android:id="@+id/btnDispararAcaoTela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDispararAcaoTelaCat"
+        android:layout_centerHorizontal="true"
+        android:text="Disparar Ação TELA"
+        android:onClick="dispararAcaoTela" />
+
+    <Button
+        android:id="@+id/btnAbrirNavegador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Abrir navegador"
+        android:onClick="abrirNavegador" />
+
+</RelativeLayout>
